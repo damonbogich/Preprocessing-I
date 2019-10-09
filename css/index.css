@@ -1,1 +1,201 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+  font-family: 'Big Shoulders Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Big Shoulders Display Regular'), local('BigShouldersDisplay-Regular'), url(https://fonts.gstatic.com/s/bigshouldersdisplay/v1/fC1_PZJEZG-e9gHhdI4-NBbfd2ys3SjJCx1czNDr.ttf) format('truetype');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 25px;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 30px;
+  background: grey;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: baseline;
+  border: 20px solid green;
+  background-color: yellow;
+  padding: 25px;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  header img {
+    width: 150px;
+    height: auto;
+  }
+}
+header h1 {
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+header nav a {
+  color: red;
+}
+.middle-content div {
+  border: 10px solid green;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 2px black;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .middle-content div img {
+    width: 150px;
+    height: auto;
+  }
+}
+.middle-content div h2 {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.middle-content div ul li {
+  color: red;
+  font-size: 1.1rem;
+}
+.middle-content div p {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 1.2rem;
+}
